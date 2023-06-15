@@ -24,6 +24,7 @@
             width: 80px;
             border-radius: 50%;
             background-color: #D5E4F7;
+            box-sizing: border-box;
         }
 
         .title_box {
@@ -150,6 +151,7 @@
             p {
                 color: red;
                 font-style: italic;
+                font-size: small;
             }
         }
         
