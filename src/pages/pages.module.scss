@@ -17,7 +17,7 @@
         flex-direction: row;
         align-items: center;
         box-sizing: border-box;
-        width: 100%;
+        // width: 100%;
 
         .image {
             height: 80px;
@@ -123,9 +123,17 @@
             ul {
                 list-style-type: none;
                 padding: 0;
+                width: 100%;
+                box-sizing: border-box;
                 
                 li {
                     margin: 8px;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    box-sizing: border-box;
 
                 }
             }
