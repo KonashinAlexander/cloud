@@ -3,7 +3,7 @@ import styles from './component.module.scss'
 
 type TButton = {
     text: string,
-    onClick: () => void,
+    onClick: () => void
 }
 
 const Button: React.FC<TButton> = ({ text, onClick }) => {

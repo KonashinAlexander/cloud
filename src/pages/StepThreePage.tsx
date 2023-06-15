@@ -55,8 +55,8 @@ const StepThreePage: React.FC = () => {
                     <p>{errors.About?.message}</p>
                 </div>
                 <div className={styles.button_box}>
-                    <button id='button-back' onClick={() => navigate('/2')}>Назад</button>
-                    <button type="submit" id='button-send' disabled={!isValid}>Отправить</button>
+                    <button className={styles.button_back} id='button-back' onClick={() => navigate('/2')}>Назад</button>
+                    <button className={styles.button_forward} type="submit" id='button-send' disabled={!isValid}>Отправить</button>
                 </div>
             </form>
 

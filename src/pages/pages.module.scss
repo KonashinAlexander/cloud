@@ -159,13 +159,26 @@
     
             display: flex;
             flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
     
-            button {
+            .button_forward {
                 background: #5558FA;
                 border-radius: 4px;
                 color: white;
                 width: 79px;
                 height: 44px;
+                border: 1.5px solid #5558FA;
+                border-radius: 4px;
+            }
+
+            .button_back {
+                color: #5558FA;
+                width: 79px;
+                height: 44px;
+                background-color: #FFFFFF;
+                border: 1.5px solid #5558FA;
+                border-radius: 4px;
             }
         }
     }

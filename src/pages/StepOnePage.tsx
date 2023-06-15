@@ -86,8 +86,8 @@ const StepOnePage: React.FC = () => {
                 </div>
 
                 <div className={styles.button_box}>
-                    <button id='button-back' onClick={() => navigate('/')}>Назад</button>
-                    <button type="submit" id='button-next' disabled={!isValid}>Далее</button>
+                    <button className={styles.button_back} id='button-back' onClick={() => navigate('/')}>Назад</button>
+                    <button className={styles.button_forward} type="submit" id='button-next' disabled={!isValid}>Далее</button>
                 </div>
             </form>
         </div>

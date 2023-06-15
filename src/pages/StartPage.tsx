@@ -8,6 +8,7 @@ import { InputField } from '../components/input-field';
 import { useNavigate } from 'react-router-dom'
 import { useAppDispatch, useAppSelector } from '../store/hooks'
 
+
 const StartPage: React.FC = () => {
 
     const dispatch = useAppDispatch()
@@ -97,7 +98,7 @@ const StartPage: React.FC = () => {
                     <p>{errors.passwordConfirm && 'Пароль должен совпадать'}</p>
                 </div>
                 <div className={styles.button_box}>
-                    <button type="submit" id='button-start' disabled={!isValid}>Начать</button>
+                    <button className={styles.button_forward} type="submit" id='button-start' disabled={!isValid}>Начать</button>
                 </div>
 
             </form>
