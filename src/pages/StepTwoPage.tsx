@@ -6,6 +6,7 @@ import { schemaStepTwo } from '../utils/validation';
 import { apdateAction } from '../store/formSlice'
 import { useNavigate } from 'react-router-dom'
 import { useAppDispatch, useAppSelector } from '../store/hooks'
+import trash from '../images/remove.svg'
 
 
 const StepTwoPage: React.FC = () => {
@@ -58,11 +59,12 @@ const StepTwoPage: React.FC = () => {
                                     {...register(`advantages.${index}.advantage`)}
                                     placeholder='Advantage'
                                 />
-                                <button type="button" onClick={() => remove(index)}>Удалить</button>
+                                <img src={trash} alt='remove' onClick={() => remove(index)} />
                             </li>
                         ))}
                     </ul>
                     <button
+                        className={styles.button_forward}
                         type="button"
                         onClick={() => append({ advantage: "" })}
                     >
@@ -115,6 +117,7 @@ const StepTwoPage: React.FC = () => {
                     <button className={styles.button_forward} type="submit" id='button-next' disabled={!isValid}>Далее</button>
                 </div>
             </form>
+
         </div>
     )
 }

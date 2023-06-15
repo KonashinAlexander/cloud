@@ -10,6 +10,25 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    .button_forward {
+        background: #5558FA;
+        border-radius: 4px;
+        color: white;
+        width: 79px;
+        height: 44px;
+        border: 1.5px solid #5558FA;
+        border-radius: 4px;
+    }
+
+    .button_back {
+        color: #5558FA;
+        width: 79px;
+        height: 44px;
+        background-color: #FFFFFF;
+        border: 1.5px solid #5558FA;
+        border-radius: 4px;
+    }
     
 
     .header_box {
@@ -17,7 +36,7 @@
         flex-direction: row;
         align-items: center;
         box-sizing: border-box;
-        // width: 100%;
+        // width: 50%;
 
         .image {
             height: 80px;
@@ -78,6 +97,11 @@
             align-items: flex-start;
             box-sizing: border-box;
             width: 100%;
+
+            label {
+                margin-bottom: 8px;
+            }
+            // margin: 8px;
     
             input, 
             select {
@@ -89,6 +113,12 @@
                 height: 44px;
             }
 
+            legend {
+                padding: 0;
+                text-align: left;
+                margin: 8px 0;
+            }
+
             .fieldset {
                 display: flex;
                 flex-direction: column;
@@ -98,13 +128,9 @@
                 padding: 0;
                 border: 0;
 
-                legend {
-                    padding: 0;
-                    text-align: left;
-                }
-
+                
                 label {
-                    // width: 20px;
+                    
                     height: 20px;
                     margin: 0;
                     display: flex;                    
@@ -128,7 +154,7 @@
                 box-sizing: border-box;
                 
                 li {
-                    margin: 8px;
+                    
                     width: 100%;
                     display: flex;
                     flex-direction: row;
@@ -139,15 +165,6 @@
                 }
             }
 
-            button {
-                background: #5558FA;
-                border-radius: 4px;
-                color: white;
-                width: 79px;
-                height: 44px;
-                margin: 8px;
-            }
-
             p {
                 color: red;
                 font-style: italic;
@@ -155,36 +172,17 @@
             }
         }
         
-        .button_box {
-    
+        .button_box {    
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             width: 100%;
-    
-            .button_forward {
-                background: #5558FA;
-                border-radius: 4px;
-                color: white;
-                width: 79px;
-                height: 44px;
-                border: 1.5px solid #5558FA;
-                border-radius: 4px;
-            }
-
-            .button_back {
-                color: #5558FA;
-                width: 79px;
-                height: 44px;
-                background-color: #FFFFFF;
-                border: 1.5px solid #5558FA;
-                border-radius: 4px;
-            }
+            
         }
     }
 }
 
 
-// * {
-//     outline: 1px solid red;
-// }
+* {
+    outline: 1px solid red;
+}
