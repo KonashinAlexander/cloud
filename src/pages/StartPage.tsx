@@ -74,7 +74,7 @@ const StartPage: React.FC = () => {
                 </div>
 
                 <div className={styles.input_box}>
-                    <label htmlFor="password">Пароль</label>
+                    <label>Пароль</label>
                     <input
                         type="password"
                         id="password"
@@ -86,7 +86,7 @@ const StartPage: React.FC = () => {
                 </div>
 
                 <div className={styles.input_box}>
-                    <label htmlFor="passwordConfirm">Подтверждение пароля</label>
+                    <label>Подтверждение пароля</label>
                     <input
                         type="password"
                         id="password-confirm"

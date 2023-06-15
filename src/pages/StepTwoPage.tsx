@@ -80,7 +80,6 @@ const StepTwoPage: React.FC = () => {
                                         type="checkbox"
                                         {...register('checkbox')}
                                         value={box}
-                                        id='field-checkbox-group-option-1'
                                     />
                                     <span>{box}</span>
                                 </label>
