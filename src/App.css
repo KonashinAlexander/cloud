@@ -1,6 +1,10 @@
 
 .App {
-  text-align: center;
-  
+  text-align: center;  
+}
+
+.copyright {
+  opacity: .5;
+  font-size: small;  
 }
 

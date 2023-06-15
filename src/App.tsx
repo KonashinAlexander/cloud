@@ -7,7 +7,6 @@ import StepThreePage from './pages/StepThreePage';
 import NotFoundPage from './pages/NotFoundPage';
 import Layout from './components/layout';
 
-
 function App() {
 
   return (
@@ -21,6 +20,9 @@ function App() {
         </Route>
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
+      <footer>
+        <p className='copyright'>&copy; Alexander Konashin 2023</p>
+      </footer>
     </div>
   );
 }

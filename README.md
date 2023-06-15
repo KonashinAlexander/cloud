@@ -12,7 +12,7 @@
 <https://www.figma.com/file/rzIp6awR6dGFVrcxcCEwzD/FrontCloudCamp?type=design&node-id=0-1&t=HN2ypz8rT1EW6YCc-0>
 
 Результат выполнения проекта расположен по ссылке:
-
+<https://cloud-form-2.vercel.app/>
 
 ## Stack
 
