@@ -43,13 +43,11 @@ const StartPage: React.FC = () => {
                 <div className={styles.image}><h1>AV</h1></div>
                 <div className={styles.title_box}>
                     <h1 className={styles.title}>Ivan Ivanov</h1>
-                    <nav>
-                        <ul className={styles.list}>
-                            <li><a href="#">Telegram</a></li>
-                            <li><a href="#">GitHub</a></li>
-                            <li><a href="#">Resume</a></li>
-                        </ul>
-                    </nav>
+                    <ul className={styles.list}>
+                        <li><a href="https://telegram.org/">Telegram</a></li>
+                        <li><a href="https://github.com/">GitHub</a></li>
+                        <li><a href="https://hh.ru/">Resume</a></li>
+                    </ul>
                 </div>
             </header>
 
@@ -81,6 +79,7 @@ const StartPage: React.FC = () => {
                         type="password"
                         id="password"
                         placeholder='password'
+                        autoComplete='new-password'
                         {...register('password', { required: "Поле обязательно к заполнению" })}
                     />
                     <p>{errors.password?.message}</p>
@@ -92,6 +91,7 @@ const StartPage: React.FC = () => {
                         type="password"
                         id="password-confirm"
                         placeholder='password'
+                        autoComplete='new-password'
                         {...register('passwordConfirm')}
                     />
                     <p>{errors.passwordConfirm && 'Пароль должен совпадать'}</p>

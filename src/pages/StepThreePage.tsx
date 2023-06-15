@@ -41,7 +41,7 @@ const StepThreePage: React.FC = () => {
 
     return (
         <div className={styles.container}>
-            <h1>Page 3</h1>
+
             <form className={styles.form} onSubmit={handleSubmit(submitThirdForm)}>
                 <div className={styles.input_box}>
                     <InputField

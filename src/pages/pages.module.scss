@@ -16,6 +16,8 @@
         display: flex;
         flex-direction: row;
         align-items: center;
+        box-sizing: border-box;
+        width: 100%;
 
         .image {
             height: 80px;
@@ -27,6 +29,8 @@
         .title_box {
             display: flex;
             flex-direction: column;
+            width: 100%;
+            box-sizing: border-box;
 
             .title {
                 font-style: normal;
@@ -34,11 +38,14 @@
                 font-size: 20px;
                 line-height: 26px;
                 color: #333333;
+                width: 100%;
+                box-sizing: border-box;
             }
 
             .list {
                 display: flex;
                 flex-direction: row;
+                flex-wrap: wrap;
                 list-style-image: url('../images/Folder.png');
                 padding: 5px;
 
@@ -58,6 +65,10 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
+        box-sizing: border-box;
+        max-width: 400px;
+        min-width: 120px;
+        width: 90%;
     
         .input_box {
             display: flex;
@@ -65,13 +76,15 @@
             justify-content: flex-start;
             align-items: flex-start;
             box-sizing: border-box;
+            width: 100%;
     
             input, 
             select {
                 background: rgba(0, 0, 0, 0.04);
                 border: 1px solid rgba(0, 0, 0, 0.16);
                 border-radius: 4px;
-                width: 400px;
+                width: 100%;
+                box-sizing: border-box;
                 height: 44px;
             }
 
@@ -90,7 +103,7 @@
                 }
 
                 label {
-                    width: 20px;
+                    // width: 20px;
                     height: 20px;
                     margin: 0;
                     display: flex;                    
@@ -149,6 +162,6 @@
 }
 
 
-// * {
-//     outline: 1px solid red;
-// }
+* {
+    outline: 1px solid red;
+}
