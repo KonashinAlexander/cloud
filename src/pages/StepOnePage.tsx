@@ -48,7 +48,11 @@ const StepOnePage: React.FC = () => {
                         required
                         placeholder='Nickname'
                         onChange={undefined}
-                        value={undefined} />
+                        value={undefined}
+                        id='nn'
+
+
+                    />
                     <p>{errors.Nickname?.message}</p>
                 </div>
 
@@ -60,6 +64,9 @@ const StepOnePage: React.FC = () => {
                         placeholder='Name'
                         onChange={undefined}
                         value={undefined}
+
+                        id='n'
+
                     />
                     <p>{errors.Name?.message}</p>
                 </div>
@@ -72,6 +79,8 @@ const StepOnePage: React.FC = () => {
                         placeholder='Surname'
                         onChange={undefined}
                         value={undefined}
+                        id='s'
+
                     />
                     <p>{errors.Surname?.message}</p>
                 </div>

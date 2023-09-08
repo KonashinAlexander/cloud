@@ -51,6 +51,9 @@ const StepThreePage: React.FC = () => {
                         placeholder='About'
                         onChange={undefined}
                         value={undefined}
+                        id='a'
+
+
                     />
                     <p>{errors.About?.message}</p>
                 </div>

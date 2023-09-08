@@ -9,7 +9,7 @@ export const schemaStart = yup.object().shape({
     password: yup.string().min(4, "Пароль не может быть менее 4-х и более 15-ти символов").max(15, "Пароль не может быть менее 4-х и более 15-ти символов").required('Пожалуйста, введите пароль'),
     // passwordConfirm: yup.string().oneOf([yup.ref('password'), null])
     passwordConfirm: yup.string().min(4, "Пароль не может быть менее 4-х и более 15-ти символов").max(15, "Пароль не может быть менее 4-х и более 15-ти символов").required('Пожалуйста, введите пароль'),
-
+    
 })
 
 export const schemaStepOne = yup.object().shape({

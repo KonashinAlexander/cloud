@@ -1,12 +1,12 @@
-import React from 'react'
-import styles from './pages.module.scss'
+import React, { useRef } from 'react';
+import styles from './pages.module.scss';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { schemaStart } from '../utils/validation'
 import { apdateAction } from '../store/formSlice'
 import { InputField } from '../components/input-field';
-import { useNavigate } from 'react-router-dom'
-import { useAppDispatch, useAppSelector } from '../store/hooks'
+import { useNavigate } from 'react-router-dom';
+import { useAppDispatch, useAppSelector } from '../store/hooks';
 
 
 const StartPage: React.FC = () => {
@@ -22,6 +22,7 @@ const StartPage: React.FC = () => {
 
     const {
         register,
+        watch,
         handleSubmit,
         formState: {
             errors,
@@ -36,6 +37,7 @@ const StartPage: React.FC = () => {
                 passwordConfirm: ''
             }
         });
+
 
     return (
         <div className={styles.container}>
@@ -59,6 +61,7 @@ const StartPage: React.FC = () => {
                         label={'Phone'}
                         register={register}
                         placeholder='+7 999 999 99-99'
+                        id='p'
 
                     />
                     <p>{errors.Phone?.message}</p>
@@ -69,6 +72,7 @@ const StartPage: React.FC = () => {
                         label={'Email'}
                         register={register}
                         placeholder='nickname@mail.domen'
+                        id='e'
 
                     />
                     <p>{errors.Email?.message}</p>
@@ -100,9 +104,7 @@ const StartPage: React.FC = () => {
                 <div className={styles.button_box}>
                     <button className={styles.button_forward} type="submit" id='button-start' disabled={!isValid}>Начать</button>
                 </div>
-
             </form>
-
         </div>
     )
 }
